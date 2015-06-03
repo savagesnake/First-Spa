@@ -1,2 +1,2 @@
-# Firts-Spa
+# First-Spa
 Creating First SPA website
