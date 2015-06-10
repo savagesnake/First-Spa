@@ -1,12 +1,17 @@
-/** 
-Main Style Sheet
-Wolfgang Criollo
-6/2/2015
+/**
+my First
+Sass
 **/
+.blue {
+  color: dodgerblue; }
 
-.blue{color: dodgerblue;}
+.red {
+  color: darkred; }
 
-.red{color: darkred;}
+table th {
+  background-color: #ececec; }
 
-table th{background-color:#ececec;}
-table td{padding:5px 10px;}
+table td {
+  padding: 5px 10px; }
+
+/*# sourceMappingURL=mainStyle.css.map */

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+    <head>
+        <title>First SPA Website</title>  
+        <meta charset="utf-8" />
+        <link href="css/mainStyle.css" rel="stylesheet" type="text/css"/>
+    </head>
+	
+<body >
+	
+
+    <div ng-controller="CusomerController">
+    <h2>Customers</h2>
+    Filter:<input type="text" data-ng-model="customerFilter.name"/>
+    <br/><br/>
+    <table>
+        <thead>
+            <tr>
+            <th data-ng-click="doSort('name')">Name</th>
+            <th data-ng-click="doSort('city')">City</th>
+            <th data-ng-click="doSort('orderTotal')">Order Total</th>
+            <th data-ng-click="doSort('joined')">Joined</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="customer in customers | filter:customerFilter | orderBy:sortBy:reverse">
+            <td>{{customer.name | uppercase}}</td>   
+            <td>{{customer.city | lowercase}}</td> 
+            <td>{{customer.orderTotal | currency}}</td>
+            <td>{{customer.joined | date}}</td> 
+            </tr>
+        </tbody>
+    </table>
+        <span>Total customer: {{customers.length }}</span>
+   </div>
+    
+    
+	<script src="js/angular.min.js"></script>
+	<script src="js/app/controllers/customersControllers.js"></script> 
+	
+	
+</body>
+</html>

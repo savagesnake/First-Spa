@@ -1,0 +1,23 @@
+/**
+my First
+Sass
+**/
+
+$blueColor:dodgerblue; // blue Color 
+$redColor:darkred; //red color
+$grayColor:#ececec; //gray color
+$paddingVar:5px 10px; 
+
+.blue {
+	color:$blueColor;
+}
+.red {
+	color:$redColor;
+}
+
+table th{
+	background-color:$grayColor;
+}
+table td{
+	padding:$paddingVar;
+}
